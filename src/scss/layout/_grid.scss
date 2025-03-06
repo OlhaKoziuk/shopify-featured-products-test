@@ -1,0 +1,16 @@
+.featured-products__list {
+  display: grid;
+  gap: $gap-mobile;
+  grid-template-columns: 1fr;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1200px;
+  list-style: none;
+
+  @include aspect-ratio(4, 3);
+
+  @include respond-to(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: $gap-desktop;
+  }
+}

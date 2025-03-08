@@ -1,18 +1,27 @@
-// Colors
+//  Colors
 $color-primary: #464B90;
 $color-text: #656874;
 $color-bg: #ffffff;
-$btn-text-color: #FFFFFF;
+$btn-text-color: #ffffff;
 
-// Breakpoints
+//  Breakpoints
+$breakpoint-mobile: 480px;
 $breakpoint-tablet: 750px;
+$breakpoint-desktop: 1024px;
 
-// Spacing
-$gap-mobile: 50px;
-$gap-desktop: 40px;
-$padding-section: 80px 40px;
-$padding-card-content: 16px 8px;
+//  Spacing
+$gap-mobile: 50px; 
+$gap-horizontal-desktop: 40px; 
+$gap-vertical-desktop: 119px; 
+$padding-section: 80px 40px; 
+$padding-card-content: 16px 8px; 
 
-// Border-radius
-$border-radius-default: 8px;
-$border-radius-btn: 40px;
+//  Border-radius
+$border-radius-default: 8px; 
+$border-radius-btn: 40px; 
+
+//fonts
+$font-family: "Gothic A1", sans-serif;
+
+
+

@@ -23,6 +23,7 @@ class CartDrawer extends HTMLElement {
         this.open(cartLink);
       }
     });
+    
   }
 
   open(triggeredBy) {
@@ -112,6 +113,8 @@ class CartDrawer extends HTMLElement {
   setActiveElement(element) {
     this.activeElement = element;
   }
+
+  
 }
 
 customElements.define('cart-drawer', CartDrawer);

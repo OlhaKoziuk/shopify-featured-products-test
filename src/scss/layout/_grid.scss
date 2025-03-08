@@ -1,16 +1,27 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
 .featured-products__list {
   display: grid;
   gap: $gap-mobile;
   grid-template-columns: 1fr;
+  grid-auto-rows: minmax(365px, auto);
   padding: 0;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 375px;
   list-style: none;
 
-  @include aspect-ratio(4, 3);
-
   @include respond-to(tablet) {
+    max-width: 1200px;
     grid-template-columns: repeat(2, 1fr);
-    gap: $gap-desktop;
+    gap: $gap-horizontal-desktop;
+  }
+
+  @include respond-to(desktop) {
+    grid-template-columns: repeat(2, 1fr); 
+    grid-auto-rows: minmax(485px, auto);
+    gap: $gap-vertical-desktop $gap-horizontal-desktop;
   }
 }
+
+

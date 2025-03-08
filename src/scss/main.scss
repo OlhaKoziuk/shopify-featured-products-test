@@ -1,15 +1,10 @@
-// abstracts
-@import 'abstracts/variables';
-@import 'abstracts/mixins';
+@use 'abstracts/variables' as *;
+@use 'abstracts/mixins' as *;
+@use 'base/typography';
+@use 'layout/grid';
+@use 'components/featured-products';
 
-// base
-@import 'base/typography';
 
-// layout
-@import 'layout/grid';
-
-// components
-@import 'components/featured-products';
 
 
 

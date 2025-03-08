@@ -1,12 +1,45 @@
-.featured-products__title {
-  @include title-medium;
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
-  @include title-large {
-    @include title-large;
+body {
+  font-family: $font-family;
+  color: $color-text;
+}
+
+a {
+  text-decoration: none;
+}
+
+.featured-products {
+  &__title {
+    text-align: center;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 36px;
+    letter-spacing: 0%;
+    color: $color-text;
+
+    @include respond-to(desktop) {
+      font-size: 42px;
+    }
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 42px;
+    letter-spacing: 0%;
+    color: $color-text;
+  }
+
+  &__btn {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: center;
   }
 }
 
-.featured-products__name {
-  font-size: 16px;
-  font-weight: 500;
-}
+
